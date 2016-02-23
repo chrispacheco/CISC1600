@@ -3,24 +3,26 @@ using namespace std;
 
 int main ()
 {
-	int number;
-	int sum=0;
-	int numberitems;
+	int sum = 0;
 
-	cout << "Enter number: ";
-	cin >> numberitems;
+	int iter = 1;
+	while ( iter <=3 )
 
-	for(int i=0;i<numberitems;i++)
 	{
-		cout << "Enter number: ";
-		cin >> number;
-	
-		sum=sum+number;
+		int x = 0;
+		cout << "Iteration # " << iter << endl;
+		cout << "Input a number: ";
+
+		cin >> x;
+		sum +=x;
+		iter++;
 
 	}
 
-	cout << "The sum of three numbers is: " << sum << endl;
-	
-	return 0;
+		cout << "The sum of the numbers is: " << sum << endl;
+
+	return 0;	
+
+		
 
 }
